@@ -11,7 +11,13 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "var(--primary)",
+        secondary: "var(--secondary)",
+        dark: "var(--dark)",
       },
+      fontFamily: {
+        gristela: "var(--font-gristela)",
+      }
     },
   },
   plugins: [],

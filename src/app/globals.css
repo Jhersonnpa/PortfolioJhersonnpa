@@ -2,14 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Gristela;
+  font-style: normal;
+  font-weight: 200 900;
+  font-display: swap;
+  src: url("/fonts/gristela.otf") format("opentype");
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #030f0f;
+  --primary:  #03624c;
+  --secondary: #00df82;
+  --foreground: #EDEDED;
+  --dark: #1A1A1A;
+  --font-gristela: 'Gristela', sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #030f0f;
     --foreground: #ededed;
   }
 }
@@ -18,4 +30,25 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  color: var(--color-foreground);
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: Gristela, Arial, Helvetica, sans-serif;
+}
+
+@layer components {
+  .glassmorphism {
+    background-color: rgba(31, 31, 31, 0.2);
+    backdrop-filter: blur(30px) saturate(100%);
+    -webkit-backdrop-filter: blur(30px) saturate(100%);
+  }
+  .shadow-image {
+    mask-image: linear-gradient(
+      #030f0f 80%,
+      transparent
+    );
+  }
 }
