@@ -1,7 +1,7 @@
 export const projects = [
   {
     id: '1',
-    screenshot: '/handyman.webp',
+    screenshot: '/assets/images/handyman.webp',
     title: 'Handyman Sant Quirze',
     subTitle: 'Landing Page Handyman',
     stack: [
@@ -22,7 +22,7 @@ export const projects = [
   },
   {
     id: '2',
-    screenshot: '/pizzapolitan.webp',
+    screenshot: '/assets/images/pizzapolitan.webp',
     title: 'Pizzapolitan',
     subTitle: 'Landing Page Pizzapolitan',
     stack: [
@@ -44,7 +44,7 @@ export const projects = [
   },
   {
     id: '3',
-    screenshot: '/sqsr.webp',
+    screenshot: '/assets/images/sqsr.webp',
     title: 'Sant Quirze Sobre Rodes',
     subTitle: 'Página web de Sant Quirze Sobre Rodes',
     stack: [
