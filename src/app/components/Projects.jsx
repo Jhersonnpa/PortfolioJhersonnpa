@@ -1,3 +1,6 @@
+import Link from "next/link";
+import Image from "next/image";
+
 export const Projects = () => {
   const projects = [
     {
@@ -23,41 +26,43 @@ export const Projects = () => {
     },
   ];
   return (
-    <section id="projects" class="py-20">
-      <div class="container mx-auto px-6">
-        <h2 class="text-3xl font-bold text-center mb-8">
+    <section id="projects" className="py-20 bg-gradient-to-t from-background to-primary">
+      <div className="container mx-auto px-6">
+        <h2 className="text-3xl font-bold text-center mb-8">
           Proyectos Destacados
         </h2>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project,i) => (
-            <div key={i} class="bg-primary rounded-lg shadow-md overflow-hidden">
-              <img
+            <div key={i} className="bg-dark rounded-lg shadow-md overflow-hidden">
+              <Image
                 src={project.image || "/placeholder.svg"}
                 alt={project.title}
-                class="w-full h-48 object-cover"
+                className="w-full h-48 object-cover"
+                height={192}
+                width={384}
               />
-              <div class="p-6">
-                <h3 class="text-xl font-semibold mb-2">{project.title}</h3>
-                <p class="text-gray-600 dark:text-gray-400 mb-4">
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-2">{project.title}</h3>
+                <p className="text-gray-600 dark:text-gray-400 mb-4">
                   {project.description}
                 </p>
-                <div class="flex justify-between">
-                  <a
+                <div className="flex justify-between">
+                  <Link
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-primary hover:underline"
+                    className="text-primary hover:underline"
                   >
                     GitHub
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     href={project.demo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="text-primary hover:underline"
+                    className="text-primary hover:underline"
                   >
                     Demo
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

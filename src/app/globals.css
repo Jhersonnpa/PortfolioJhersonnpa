@@ -10,45 +10,179 @@
   src: url("/fonts/gristela.otf") format("opentype");
 }
 
-:root {
+
+body {
+  font-family: 'Roboto',Arial, Helvetica, sans-serif;
+  background-color: #030f0f !important;
+}
+
+/* :root {
   --background: #030f0f;
   --primary:  #03624c;
   --secondary: #00df82;
   --foreground: #EDEDED;
   --dark: #1A1A1A;
-  --font-gristela: 'Gristela', sans-serif;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #030f0f;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-h1,h2,h3,h4,h5,h6 {
-  color: var(--color-foreground);
-  font-size: inherit;
-  font-weight: inherit;
-  font-family: Gristela, Arial, Helvetica, sans-serif;
-}
+} */
 
 @layer components {
   .glassmorphism {
-    background-color: rgba(31, 31, 31, 0.2);
-    backdrop-filter: blur(30px) saturate(100%);
-    -webkit-backdrop-filter: blur(30px) saturate(100%);
+    background-color: #1f1f1f33;
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
   }
   .shadow-image {
     mask-image: linear-gradient(
       #030f0f 80%,
       transparent
     );
+  }
+}
+
+@layer base {
+  :root {
+    --background: 180, 67%, 4%;
+    --primary:  166, 94%, 20%;
+    --secondary: 155, 100%, 44%;
+    --foreground: 0, 0%, 96%;
+    --foreground-secondary: 0, 0%, 89%;
+    --dark: 0, 0%, 10%;
+
+    --white--ice: rgba(225, 240, 255, 1);
+    --solitude: rgba(234, 246, 255, 1);
+    --tundora: rgba(66, 66, 66, 1);
+    --mine--shaft: rgba(35, 35, 35, 1);
+    --cod--gray: rgba(23, 23, 23, 1);
+    --dove--gray-30: rgba(115, 115, 115, 0.30000001192092896);
+    --ocean--green: rgba(60, 177, 121, 1);
+    --celtic: rgba(15, 41, 30, 1);
+    --bush: rgba(17, 49, 35, 1);
+    --black--bean: rgba(12, 31, 23, 1);
+    --jungle--green: rgba(48, 164, 108, 1);
+    --green--pea: rgba(24, 121, 78, 1);
+    --jewel: rgba(13, 126, 126, 1);
+    --dodger--blue: rgba(54, 158, 255, 1);
+    --azure--radiance: rgba(0, 145, 255, 1);
+    --science--blue: rgba(0, 106, 220, 1);
+    --endeavour: rgba(9, 84, 165, 1);
+    --downriver: rgba(15, 48, 88, 1);
+    --blue--zodiac: rgba(16, 42, 76, 1);
+    --amethyst: rgba(157, 91, 210, 1);
+    --fuchsia--pink: rgba(142, 78, 198, 1);
+    --cerise: rgba(214, 64, 159, 1);
+    --disco: rgba(122, 29, 90, 1);
+    --wine--berry: rgba(69, 26, 55, 1);
+    --loulou: rgba(59, 10, 42, 1);
+    --revolver: rgba(43, 14, 68, 1);
+    --antique--bronze: rgba(89, 74, 5, 1);
+    --bracken: rgba(68, 31, 4, 1);
+    --valencia: rgba(220, 61, 67, 1);
+    --brick--red: rgba(205, 43, 49, 1);
+    --crown-of--thorns: rgba(130, 32, 37, 1);
+    --rose-of--sharon: rgba(189, 75, 0, 1);
+    --rose-of--sharon-2: rgba(189, 75, 0, 0.2);
+    --brown: rgba(148, 62, 0, 1);
+    --supernova: rgba(247, 206, 0, 1);
+    --tan--hide: rgba(250, 147, 78, 1);
+    --silver--chalice: rgba(165, 165, 165, 1);
+
+    --font-gristela: 'Gristela', sans-serif;
+
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary-foreground: 0 0% 98%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 10% 3.9%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply text-foreground;
+  }
+}
+
+
+@layer utilities {
+  .h1-bold {
+    @apply text-5xl md:text-6xl xl:text-8xl font-bold tracking-tighter;
+  }
+
+  .h2-bold {
+    @apply text-4xl md:text-5xl xl:text-7xl font-bold tracking-[-0.025em];
+  }
+
+  .h3-bold {
+    @apply text-3xl lg:text-4xl font-bold tracking-[-0.005em];
+  }
+
+  .regular-paragraph {
+    @apply md:text-2xl text-silverchalice font-normal leading-relaxed md:leading-[1.75] tracking-[-0.15px];
+  }
+
+  .text-code {
+    @apply font-Silkscreen;
+  }
+
+  .flex-between {
+    @apply flex justify-between items-center;
+  }
+
+  .main-mask {
+    mask-image: linear-gradient(transparent, rgba(0, 0, 0, 1) 100px);
+    background-image: url('/assets/images/bg-img.png');
+    opacity: 0.2;
+  }
+
+  .hero-gradient {
+    background: linear-gradient(
+      30deg,
+      var(--background) -50%,
+      transparent,
+      var(--background) 150%
+    );
+  }
+
+  .grid-pattern {
+    background-image: url('/assets/images/grid-pattern.png');
+    mask-image: radial-gradient(ellipse at bottom, #000, transparent 50%);
+  }
+
+  .dot-pattern {
+    mask-image: linear-gradient(0deg, #000, transparent),
+      linear-gradient(180deg, #000, transparent);
+    mask-composite: intersect;
+    /* mask-image: linear-gradient(transparent, #000, transparent); */
+  }
+
+  .projects-grid-pattern {
+    background-image: url('/assets/images/grid-pattern.png');
+    mask-image: linear-gradient(180deg, white, transparent);
+  }
+
+  .projects-grid-pattern-bottom {
+    background-image: url('/assets/images/grid-pattern.png');
+    background-position: bottom left;
+    mask-image: linear-gradient(0deg, white, transparent);
+  }
+
+  .blog-grid-pattern {
+    background-image: url('/assets/images/grid-pattern.png');
+    mask-image: linear-gradient(180deg, white, transparent);
   }
 }

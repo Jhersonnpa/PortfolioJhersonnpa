@@ -16,18 +16,18 @@ export const Testimonials = () => {
     },
   ];
   return (
-    <section class="py-10 bg-gradient-to-t from-primary from- via-background via-">
-  <div class="container mx-auto px-6">
-    <h2 class="text-3xl font-bold text-center mb-8">Testimonios</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <section className="py-10 bg-gradient-to-b from-background to-primary">
+  <div className="container mx-auto px-6">
+    <h2 className="text-3xl font-bold text-center mb-8">Testimonios</h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
       {
         testimonials.map((testimonial,i) => (
-          <div key={i} class="bg-background p-6 rounded-lg shadow-md">
-            <p class="mb-4 italic">"{testimonial.content}"</p>
-            <div class="flex items-center">
-              <div class="ml-4">
-                <p class="font-semibold">{testimonial.name}</p>
-                <p class="text-sm text-gray-400">
+          <div key={i} className="bg-dark p-6 rounded-lg shadow-md">
+            <p className="mb-4 italic">"{testimonial.content}"</p>
+            <div className="flex items-center">
+              <div className="ml-4">
+                <p className="font-semibold">{testimonial.name}</p>
+                <p className="text-sm text-gray-400">
                   {testimonial.role}
                 </p>
               </div>

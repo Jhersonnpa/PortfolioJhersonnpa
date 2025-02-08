@@ -1,17 +1,20 @@
 // import Image from "next/image";
-import {Hero} from "@/components/Hero";
-import {TechStack} from "@/components/TechStack";
-import {Projects} from "@/components/Projects";
-import {Testimonials} from "@/components/Testimonials";
-import {Contact} from "@/components/Contact";
+import Hero from "@/components/Hero";
+import About from "@/components/about/About";
+import Techs from "@/components/techs/Techs";
+import ProjectsSection from "@/components/projects/ProjectsSection";
+import Reviews from "@/components/review/Reviews";
+import Contact from "@/components/contact/Contact";
+
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <TechStack />
-      <Projects />
-      <Testimonials />
+      <About />
+      <Techs />
+      <ProjectsSection />
+      <Reviews />
       <Contact />
     </>
   );

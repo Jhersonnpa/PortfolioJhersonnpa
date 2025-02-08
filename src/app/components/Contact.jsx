@@ -21,7 +21,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gradient-to-b from-primary from- via-bg via-">
+    <section id="contact" className="py-20 bg-gradient-to-t from-background to-primary">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-bold text-center mb-8">Contacto</h2>
         <form onSubmit={handleSubmit} className="max-w-lg mx-auto">
