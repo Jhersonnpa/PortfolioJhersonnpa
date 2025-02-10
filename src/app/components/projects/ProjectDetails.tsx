@@ -53,7 +53,7 @@ const ProjectDetails = ({
       >
         <CardHeader className="text-center">
           <CardTitle className="text-whiteice">{title}</CardTitle>
-          <CardDescription className="text-tundora">{subTitle}</CardDescription>
+          <CardDescription className="text-gray-300">{subTitle}</CardDescription>
         </CardHeader>
         <CardContent className="flex flex-col items-center gap-6 xl:grid xl:grid-cols-6">
           <div className="flex flex-wrap items-center justify-center gap-x-3 xl:flex-col xl:items-end xl:justify-center xl:self-start">
@@ -71,7 +71,7 @@ const ProjectDetails = ({
             <p className="text-whiteice">{description}</p>
           </div>
 
-          <p className="text-[14px] text-tundora xl:self-end	xl:justify-self-start">
+          <p className="text-[14px] text-gray-300 xl:self-end	xl:justify-self-start">
             {date}
           </p>
         </CardContent>
@@ -103,7 +103,7 @@ const ProjectDetails = ({
             className="transition-all"
           >
             <Link href={live} target="_blank">
-              Live »
+              Web »
             </Link>
           </Button>
         </CardFooter>

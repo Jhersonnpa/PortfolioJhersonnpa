@@ -8,7 +8,7 @@ const ProjectCard = ({ src, title }: { src: string; title: string }) => {
         alt={title}
         width={350}
         height={400}
-        className="size-full bg-cover bg-center"
+        className="size-full bg-cover bg-center object-cover object-top"
       />
     </div>
   );

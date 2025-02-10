@@ -8,7 +8,7 @@ const Techs = () => {
     <section className="relative flex flex-col items-center justify-center overflow-hidden px-6 py-24">
       <div className="relative">
         <div className="flex flex-col items-center justify-center gap-8 rounded-lg bg-none ">
-          <p className="regular-paragraph z-10 max-w-[850px] md:text-center">
+          <p className="regular-paragraph !text-zinc-300 z-10 max-w-[850px] md:text-center">
             Con más de 2 años de experiencia en desarrollo web, he trabajado en
             proyectos desafiantes utilizando las últimas tecnologías para
             crear soluciones robustas y escalables.

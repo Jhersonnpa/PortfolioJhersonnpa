@@ -40,7 +40,7 @@ const SkillCard = ({
         <h3>{titleLabel}</h3>
       </div>
 
-      <p className="text-silverchalice">{content}</p>
+      <p className="text-zinc-300">{content}</p>
     </MagicCard>
   );
 };

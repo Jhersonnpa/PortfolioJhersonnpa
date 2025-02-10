@@ -5,8 +5,8 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="relative px-6 pb-44" style={{ contain: 'layout' }}>
-      <div className="pt-40">
+    <section className="relative px-6 pb-52" style={{ contain: 'layout' }}>
+      <div className="pt-28">
         <h1 className="h1-bold flex flex-col items-start md:items-center">
           <span>Desarrollo de</span>
           <span>Webs Modernas</span>
@@ -75,9 +75,9 @@ const Hero = () => {
         />
       </div>
 
-      <div className="pointer-events-none absolute inset-0 -z-10 [mask-image:linear-gradient(#000_50%,transparent)]">
+      {/* <div className="pointer-events-none absolute inset-0 -z-10 [mask-image:linear-gradient(#000_50%,transparent)]">
         <div className="grid-pattern pointer-events-none absolute inset-0" />
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -1,4 +1,4 @@
-import { CircleGauge, Layers, Package } from 'lucide-react';
+import { CircleGauge, Layers, SearchCheck } from 'lucide-react';
 
 export const skills = [
   {
@@ -9,39 +9,39 @@ export const skills = [
       icon: Layers,
     },
     title: {
-      label: 'Scalability',
+      label: 'Escabilidad',
       background: 'var(--black--bean)',
     },
     content:
-      'I specialize in front-end architectures that scale as your applications and teams grow, using modular structures and efficient workflows.',
+      'Me especializo en arquitecturas front-end que escalan a medida que sus aplicaciones y equipos crecen, utilizando estructuras modulares y flujos de trabajo eficientes.',
   },
   {
-    id: 'Performance',
+    id: 'Rendimiento',
     gradientColor: 'var(--azure--radiance)',
     asset: {
       background: 'var(--blue--zodiac)',
       icon: CircleGauge,
     },
     title: {
-      label: 'Performance',
+      label: 'Rendimiento',
       background: 'var(--downriver)',
     },
     content:
-      'I ensure front-end applications are optimized for speed, responsiveness, and seamless user experiences as they are efficient for developers.',
+      'Me aseguro de que las aplicaciones front-end estén optimizadas para la velocidad, la capacidad de respuesta y las experiencias de usuario fluidas, ya que son eficientes para los desarrolladores.',
   },
   {
-    id: 'modularity',
+    id: 'SEO-tecnico',
     gradientColor: 'var(--rose-of--sharon)',
     asset: {
       background: 'var(--rose-of--sharon-2)',
-      icon: Package,
+      icon: SearchCheck,
     },
     title: {
-      label: 'Modularity',
+      label: 'SEO Técnico',
       background: 'var(--rose-of--sharon-2)',
     },
     content:
-      'I create reusable components, libraries, and tools that empower teams to build consistent and efficient front-end solutions at scale.',
+      'Me aseguro de que las aplicaciones front-end sean rastreables, indexables y accesibles para los motores de búsqueda, lo que garantiza una clasificación más alta y una mayor visibilidad.',
   },
 ];
 
@@ -55,7 +55,6 @@ export const slugs = [
   'express',
   'nextdotjs',
   'prisma',
-  'amazonaws',
   'postgresql',
   'firebase',
   'vercel',
@@ -63,7 +62,6 @@ export const slugs = [
   'docker',
   'git',
   'github',
-  'visualstudiocode',
   'figma',
   'mongodb',
   'astro',
