@@ -3,7 +3,7 @@ import ContactCard from '@/components/contact/ContactCard';
 
 const Contact = () => {
   return (
-    <section className="relative space-y-12 px-6 py-24">
+    <section className="relative space-y-12 px-6 py-24" id="contact">
       <h4 className="h3-bold md:mx-auto md:max-w-[850px] md:text-center">
       ¡Creemos algo excepcional juntos! No dudes en contactarme para colaborar, trabajar como freelance o simplemente para saludarnos.
       </h4>

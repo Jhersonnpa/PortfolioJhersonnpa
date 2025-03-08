@@ -20,7 +20,7 @@ export const socialLinks = [
     id: 'resume',
     icon: '/assets/icons/resume.svg',
     alt: "Link para el CV de Jherson",
-    path: 'https://drive.google.com/file/d/1YiBWrY2cMZRaHtbeiHZSjYpizlhXqgEr/view?usp=sharing',
+    path: '/assets/Jherson-Pabon-CV-2025.pdf',
   },
   {
     id: 'github',
